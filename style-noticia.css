@@ -1,0 +1,185 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background:#f4f4f4; color:#333; }
+
+/* Estilo mejorado para el header */
+header {
+  background: green;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 24px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-news img { width: 100%; border-radius: 15px; display: block; }
+.main-news h2 { margin: 10px 0 5px; font-size: 22px; }
+.main-news p { margin: 0; line-height: 1.6; }
+
+.side-news { display: flex; flex-direction: column; gap: 15px; }
+.side-news article {
+  background: #fff; padding: 10px; border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.side-news img { width: 100%; border-radius: 10px; display: block; }
+.side-news h3 { font-size: 16px; margin: 8px 0 4px; }
+.side-news p { font-size: 14px; color: #555; margin: 0; }
+
+.more-news {
+  padding: 0 48px 24px;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.more-news article {
+  background: #fff; padding: 10px; border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.more-news img { width: 100%; border-radius: 10px; display: block; }
+.more-news h3 { font-size: 16px; margin: 8px 0 4px; }
+.more-news p { font-size: 14px; color: #555; margin: 0; }
+
+@media (max-width: 768px) {
+  .container { grid-template-columns: 1fr; padding: 16px; }
+  .more-news { padding: 0 16px 16px; }
+}
+.slogan {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  color: #f1f1f1;
+}
+/* Banner de noticiero */
+header {
+  background: green;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Impact", "Arial Black", sans-serif; /* Titular estilo TV */
+  
+  width: 80%;                   /* Más ancho pero con espacio a los lados */
+  margin: 30px auto;            /* Centrado automáticamente */
+  padding: 25px 0;
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  
+  display: block;               /* Ocupa todo el ancho disponible */
+  position: relative;           /* Necesario para decoraciones extra */
+}
+/* Banner de noticiero */
+header {
+  background: green;
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Poppins', 'Arial Rounded MT Bold', sans-serif; /* Fuente moderna */
+  
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px 0;
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgb(155, 136, 136);   /* Barra roja estilo TV */
+  border-radius: 0 0 12px 12px;
+}
+
+.slogan {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  letter-spacing: 1.5px;
+  color: #f1f1f1;
+  font-family: 'Nunito', sans-serif; /* Fuente distinta para contraste */
+}
+
+/* Resto de tus estilos igual que antes */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 24px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-news img { width: 100%; border-radius: 15px; display: block; }
+.main-news h2 { margin: 10px 0 5px; font-size: 22px; }
+.main-news p { margin: 0; line-height: 1.6; }
+
+.side-news { display: flex; flex-direction: column; gap: 15px; }
+.side-news article {
+  background: #fff; padding: 10px; border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.side-news img { width: 100%; border-radius: 10px; display: block; }
+.side-news h3 { font-size: 16px; margin: 8px 0 4px; }
+.side-news p { font-size: 14px; color: #555; margin: 0; }
+
+.more-news {
+  padding: 0 48px 24px;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.more-news article {
+  background: #fff; padding: 10px; border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.more-news img { width: 100%; border-radius: 10px; display: block; }
+.more-news h3 { font-size: 16px; margin: 8px 0 4px; }
+.more-news p { font-size: 14px; color: #555; margin: 0; }
+
+@media (max-width: 768px) {
+  .container { grid-template-columns: 1fr; padding: 16px; }
+  .more-news { padding: 0 16px 16px; }
+}
+/* 🔥 Efecto hover en artículos */
+.more-news article,
+.side-news article,
+.main-news {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.more-news article:hover,
+.side-news article:hover,
+.main-news:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+/* Mantener estilo normal de texto en enlaces dentro de noticias */
+a {
+  text-decoration: none; /* Quita subrayado */
+  color: inherit;        /* Mantiene el color de la fuente normal */
+  display: block;        /* Para que todo el artículo sea clickeable */
+}
